@@ -1,5 +1,7 @@
 name: Generate APK
+
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +21,7 @@ jobs:
           apk-name: 'MediaTracker.apk'
           package-name: 'com.yamini.mediatracker'
           scheme: 'https'
-          url: 'https://your-website-url.com'
+          url: 'https://example.com'
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
